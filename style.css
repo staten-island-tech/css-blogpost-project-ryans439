@@ -1,19 +1,82 @@
+/* Google Font */
 body {
-    background-color: lightblue;
-    align-items: center;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text */
 }
 
-h1 {
-    color:Black;
-    text-align: center;
+header {
+    background-color: #0288d1; /* Darker blue for the header */
+    padding: 20px;
+    color: white;
 }
-div {
-    
-    width: 300px;
-    border: 15px solid black;
-    padding: 50px;
-    margin: 20px;
+
+#blog-title {
+    margin: 0;
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center; /* Center posts horizontally */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Make posts responsive */
+    gap: 20px; /* Space between posts */
+    max-width: 1200px;
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.post {
+    background-color: #ffffff;
+    border: 2px solid #0288d1; /* Blue border around posts */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px; /* Fixed width for each post */
+    text-align: center; /* Center content inside each post */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.image-box {
+    border: 2px solid #0288d1; /* Blue border around image */
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Space below the image */
+    display: inline-block; /* Ensures the border fits around the image */
+}
+
+.post img {
+    width: 100%; /* Ensure the image fits within the container */
+    border-radius: 8px;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #0288d1;
+}
+
+.preview-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #0288d1;
+    padding: 20px;
+    color: white;
     text-align: center;
-  }
+    position: relative; /* Changed to relative to ensure footer is at the bottom */
+    bottom: 0;
+    width: 100%;
+}

@@ -1,26 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basketball Legends Blog</title>
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <header>
+        <h1 id="blog-title">Basketball Legends</h1>
+    </header>
 
-    <h1>Goat Debate</h1>
-    <div>This is Lebron James</div>
-    <div><img src="https://tinyurl.com/3ky5uec8" alt="Lebron"></div>
-    <class></class>
-    
+    <main>
+        <section class="blog-posts">
+            <!-- LeBron James Post -->
+            <div class="post">
+                <div class="image-box">
+                    <img src="data:image/jpeg;base64,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" alt="LeBron James" />
+                </div>
+                <h2 class="post-title">LeBron James: The King of Basketball</h2>
+                <p class="preview-text">
+                    LeBron James is widely regarded as one of the greatest players in NBA history. With multiple MVPs and championships, he continues to dominate the court.
+                </p>
+            </div>
 
-  
-  
-                
+            <!-- Stephen Curry Post -->
+            <div class="post">
+                <div class="image-box">
+                    <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png" alt="Stephen Curry" />
+                </div>
+                <h2 class="post-title">Stephen Curry: The Three-Point Revolution</h2>
+                <p class="preview-text">
+                    Stephen Curry revolutionized the game with his incredible shooting skills. His ability to hit three-pointers from anywhere on the court changed basketball forever.
+                </p>
+            </div>
 
-       
+            <!-- Michael Jordan Post -->
+            <div class="post">
+                <div class="image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Michael_Jordan_in_2014.jpg" alt="Michael Jordan" />
+                </div>
+                <h2 class="post-title">Michael Jordan: The Greatest of All Time</h2>
+                <p class="preview-text">
+                    Michael Jordan, a six-time NBA champion and five-time MVP, is often considered the greatest basketball player of all time. His legacy remains unmatched.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hola Mr. Whalen Blog</p>
+    </footer>
+
 </body>
 </html>
+
