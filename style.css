@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color:Black;
+    text-align: center;
+}
+div {
+    
+    width: 300px;
+    border: 15px solid black;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+  }
